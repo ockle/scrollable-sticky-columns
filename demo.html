@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://raw.githubusercontent.com/ockle/scrollable-sticky-columns/src/scrollable-sticky-columns.min.js"></script>
+
+        <title>Scrollable Sticky Columns Demo</title>
+
+        <style type="text/css">
+            * {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0px;
+                padding: 0px;
+                font-family: sans-serif;
+                color: white;
+                text-shadow: 1px 1px 2px black;
+            }
+
+            ul {
+                padding-left: 10%;
+            }
+
+            header {
+                width: 100%;
+                height: 100px;
+                background-color: orange;
+                text-align: center;
+                line-height: 100px;
+                font-size: 3em;
+            }
+
+            @media (max-width: 440px) {
+                body {
+                    font-size: 0.75em;
+                }
+
+                header {
+                    line-height: 50px;
+                    font-size: 2.5em;
+                }
+            }
+
+            @media (min-width: 441px) and (max-width: 600px) {
+                body {
+                    font-size: 0.75em;
+                }
+
+                header {
+                    font-size: 2.5em;
+                }
+            }
+
+            @media (min-width: 601px) and (max-width: 740px) {
+                body {
+                    font-size: 0.875em;
+                }
+
+                header {
+                    font-size: 2.75em;
+                }
+            }
+
+            footer {
+                width: 100%;
+                height: 50px;
+                background-color: black;
+                text-align: center;
+                line-height: 50px;
+            }
+
+            footer a {
+                color: white;
+                text-decoration: none;
+            }
+
+            footer a:hover {
+                text-decoration: underline;
+            }
+
+            #wrapper {
+                padding: 1.5%;
+            }
+
+            .column {
+                float: left;
+                border-radius: 5px;
+                overflow: hidden; /* Just so the demo text doesn't spill out on a narrow viewport */
+            }
+
+            #left {
+                width: 24%;
+                height: 1000px;
+                height: 200vh;
+                background: linear-gradient(to bottom, green, greenyellow);
+            }
+
+            #center {
+                width: 49%;
+                padding: 1%;
+                height: 2500px;
+                height: 400vh;
+                background: linear-gradient(to bottom, blue, cyan);
+                margin: 0px 1.5%;
+            }
+
+            #right {
+                width: 24%;
+                height: 1500px;
+                height: 300vh;
+                background: linear-gradient(to bottom, red, pink);
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>Scrollable Sticky Columns Demo</header>
+
+        <div id="wrapper">
+            <div id="left" class="column">
+                <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                    <li>Five</li>
+                    <li>Six</li>
+                    <li>Seven</li>
+                    <li>Eight</li>
+                    <li>Nine</li>
+                    <li>Ten</li>
+                </ul>
+                <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                    <li>Five</li>
+                    <li>Six</li>
+                    <li>Seven</li>
+                    <li>Eight</li>
+                    <li>Nine</li>
+                    <li>Ten</li>
+                </ul>
+                <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                    <li>Five</li>
+                    <li>Six</li>
+                    <li>Seven</li>
+                    <li>Eight</li>
+                    <li>Nine</li>
+                    <li>Ten</li>
+                </ul>
+                <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                    <li>Five</li>
+                    <li>Six</li>
+                    <li>Seven</li>
+                    <li>Eight</li>
+                    <li>Nine</li>
+                    <li>Ten</li>
+                </ul>
+            </div>
+
+            <div id="center" class="column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Similiter sensus, cum accessit ad naturam, tuetur illam quidem, sed etiam se tuetur; Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Utram tandem linguam nescio? Duo Reges: constructio interrete. Effluit igitur voluptas corporis et prima quaeque avolat saepiusque relinquit causam paenitendi quam recordandi. Et quidem saepe quaerimus verbum Latinum par Graeco et quod idem valeat; Sed quia studebat laudi et dignitati, multum in virtute processerat. Nam de summo mox, ut dixi, videbimus et ad id explicandum disputationem omnem conferemus. Ergo id est convenienter naturae vivere, a natura discedere. Quid turpius quam sapientis vitam ex insipientium sermone pendere? Ut enim consuetudo loquitur, id solum dicitur honestum, quod est populari fama gloriosum. Immo alio genere; </p>
+
+                <p>Intellegi quidem, ut propter aliam quampiam rem, verbi gratia propter voluptatem, nos amemus; Innumerabilia dici possunt in hanc sententiam, sed non necesse est. Quid interest, nisi quod ego res notas notis verbis appello, illi nomina nova quaerunt, quibus idem dicant? Amicitiae vero locus ubi esse potest aut quis amicus esse cuiquam, quem non ipsum amet propter ipsum? In qua quid est boni praeter summam voluptatem, et eam sempiternam? Compensabatur, inquit, cum summis doloribus laetitia. Ut in voluptate sit, qui epuletur, in dolore, qui torqueatur. Hoc positum in Phaedro a Platone probavit Epicurus sensitque in omni disputatione id fieri oportere. </p>
+
+                <p>Illa enim, quae prosunt aut quae nocent, aut bona sunt aut mala, quae sint paria necesse est. At quanta conantur! Mundum hunc omnem oppidum esse nostrum! Incendi igitur eos, qui audiunt, vides. Sextilio Rufo, cum is rem ad amicos ita deferret, se esse heredem Q. Illo enim addito iuste fit recte factum, per se autem hoc ipsum reddere in officio ponitur. Hoc etsi multimodis reprehendi potest, tamen accipio, quod dant. Sunt enim prima elementa naturae, quibus auctis vírtutis quasi germen efficitur. Scripta sane et multa et polita, sed nescio quo pacto auctoritatem oratio non habet. Itaque et vivere vitem et mori dicimus arboremque et novellan et vetulam et vigere et senescere. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Quod autem principium officii quaerunt, melius quam Pyrrho; Etsi ea quidem, quae adhuc dixisti, quamvis ad aetatem recte isto modo dicerentur. Nam Metrodorum non puto ipsum professum, sed, cum appellaretur ab Epicuro, repudiare tantum beneficium noluisse; </p>
+
+                <p>Illa sunt similia: hebes acies est cuipiam oculorum, corpore alius senescit; Nam si beatus umquam fuisset, beatam vitam usque ad illum a Cyro extructum rogum pertulisset. Quibus rebus vita consentiens virtutibusque respondens recta et honesta et constans et naturae congruens existimari potest. Si est nihil nisi corpus, summa erunt illa: valitudo, vacuitas doloris, pulchritudo, cetera. -delector enim, quamquam te non possum, ut ais, corrumpere, delector, inquam, et familia vestra et nomine. Quis enim potest istis, quae te, ut ais, delectant, brevibus et acutis auditis de sententia decedere? Superiores tres erant, quae esse possent, quarum est una sola defensa, eaque vehementer. Nihil est enim, de quo aliter tu sentias atque ego, modo commutatis verbis ipsas res conferamus. Eorum enim omnium multa praetermittentium, dum eligant aliquid, quod sequantur, quasi curta sententia; </p>
+
+                <p>Nobis aliter videtur, recte secusne, postea; Quid tibi, Torquate, quid huic Triario litterae, quid historiae cognitioque rerum, quid poetarum evolutio, quid tanta tot versuum memoria voluptatis affert? Ipse negat, ut ante dixi, luxuriosorum vitam reprehendendam, nisi plane fatui sint, id est nisi aut cupiant aut metuant. Nemo nostrum istius generis asotos iucunde putat vivere. Cum id quoque, ut cupiebat, audivisset, evelli iussit eam, qua erat transfixus, hastam. Atque ego: Scis me, inquam, istud idem sentire, Piso, sed a te opportune facta mentio est. Sed quanta sit alias, nunc tantum possitne esse tanta. Nam de summo mox, ut dixi, videbimus et ad id explicandum disputationem omnem conferemus. Quae dici eadem de ceteris virtutibus possunt, quarum omnium fundamenta vos in voluptate tamquam in aqua ponitis. Multa sunt dicta ab antiquis de contemnendis ac despiciendis rebus humanis; Nihil enim desiderabile concupiscunt, plusque in ipsa iniuria detrimenti est quam in iis rebus emolumenti, quae pariuntur iniuria. Id autem eius modi est, ut additum ad virtutem auctoritatem videatur habiturum et expleturum cumulate vitam beatam, de quo omnis haec quaestio est. Cuius ad naturam apta ratio vera illa et summa lex a philosophis dicitur. Sed ad bona praeterita redeamus. </p>
+
+                <p>Eodem modo is enim tibi nemo dabit, quod, expetendum sit, id esse laudabile. Incommoda autem et commoda-ita enim estmata et dustmata appello-communia esse voluerunt, paria noluerunt. Quae fere omnia appellantur uno ingenii nomine, easque virtutes qui habent, ingeniosi vocantur. Hunc igitur finem illi tenuerunt, quodque ego pluribus verbis, illi brevius secundum naturam vivere, hoc iis bonorum videbatur extremum. Tantum dico, magis fuisse vestrum agere Epicuri diem natalem, quam illius testamento cavere ut ageretur. Atque ut ceteri dicere existimantur melius quam facere, sic hi mihi videntur facere melius quam dicere. Teneo, inquit, finem illi videri nihil dolere. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Hanc se tuus Epicurus omnino ignorare dicit quam aut qualem esse velint qui honestate summum bonum metiantur. Vives, inquit Aristo, magnifice atque praeclare, quod erit cumque visum ages, numquam angere, numquam cupies, numquam timebis. </p>
+
+                <p>Ut placet, inquit, etsi enim illud erat aptius, aequum cuique concedere. Magno hic ingenio, sed res se tamen sic habet, ut nimis imperiosi philosophi sit vetare meminisse. Cum enim summum bonum in voluptate ponat, negat infinito tempore aetatis voluptatem fieri maiorem quam finito atque modico. Quid tibi, Torquate, quid huic Triario litterae, quid historiae cognitioque rerum, quid poetarum evolutio, quid tanta tot versuum memoria voluptatis affert? Quodcumque in mentem incideret, et quodcumque tamquam occurreret. Summum ením bonum exposuit vacuitatem doloris; Occultum facinus esse potuerit, gaudebit; </p>
+
+                <p>Hoc loco discipulos quaerere videtur, ut, qui asoti esse velint, philosophi ante fiant. Tertium autem omnibus aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. Miserum hominem! Si dolor summum malum est, dici aliter non potest. Quo minus animus a se ipse dissidens secumque discordans gustare partem ullam liquidae voluptatis et liberae potest. At quanta conantur! Mundum hunc omnem oppidum esse nostrum! Incendi igitur eos, qui audiunt, vides. Nemo enim est, qui aliter dixerit quin omnium naturarum simile esset id, ad quod omnia referrentur, quod est ultimum rerum appetendarum. Ita est quoddam commune officium sapientis et insipientis, ex quo efficitur versari in iis, quae media dicamus. </p>
+
+                <p>Quid interest, nisi quod ego res notas notis verbis appello, illi nomina nova quaerunt, quibus idem dicant? Hic ego: Pomponius quidem, inquam, noster iocari videtur, et fortasse suo iure. Illud dico, ea, quae dicat, praeclare inter se cohaerere. Sextilio Rufo, cum is rem ad amicos ita deferret, se esse heredem Q. Sin autem est in ea, quod quidam volunt, nihil impedit hanc nostram comprehensionem summi boni. Quod autem in homine praestantissimum atque optimum est, id deseruit. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Itaque haec cum illis est dissensio, cum Peripateticis nulla sane. Negat esse eam, inquit, propter se expetendam. Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur? Quod autem satis est, eo quicquid accessit, nimium est; </p>
+
+                <p>Qui igitur convenit ab alia voluptate dicere naturam proficisci, in alia summum bonum ponere? Faceres tu quidem, Torquate, haec omnia; Uti tum denique iudicetur beatusne fuerit, cum extremum vitae diem morte confecerit, quod ille unus e septem sapientibus non sapienter Croesum monuit; Compensabatur, inquit, cum summis doloribus laetitia. Quid paulo ante, inquit, dixerim nonne meministi, cum omnis dolor detractus esset, variari, non augeri voluptatem? Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus; Licet hic rursus ea commemores, quae optimis verbis ab Epicuro de laude amicitiae dicta sunt. Quod autem satis est, eo quicquid accessit, nimium est; </p>
+            </div>
+
+            <div id="right" class="column">
+                <ul>
+                    <li>Alpha</li>
+                    <li>Bravo</li>
+                    <li>Charlie</li>
+                    <li>Delta</li>
+                    <li>Echo</li>
+                    <li>Foxtrot</li>
+                    <li>Golf</li>
+                    <li>Hotel</li>
+                    <li>India</li>
+                    <li>Juliett</li>
+                    <li>Kilo</li>
+                    <li>Lima</li>
+                    <li>Mike</li>
+                    <li>November</li>
+                    <li>Oscar</li>
+                    <li>Papa</li>
+                    <li>Quebec</li>
+                    <li>Romeo</li>
+                    <li>Sierra</li>
+                    <li>Tango</li>
+                    <li>Uniform</li>
+                    <li>Victor</li>
+                    <li>Whiskey</li>
+                    <li>X-ray</li>
+                    <li>Yankee</li>
+                    <li>Zulu</li>
+                </ul>
+                <ul>
+                    <li>Alpha</li>
+                    <li>Bravo</li>
+                    <li>Charlie</li>
+                    <li>Delta</li>
+                    <li>Echo</li>
+                    <li>Foxtrot</li>
+                    <li>Golf</li>
+                    <li>Hotel</li>
+                    <li>India</li>
+                    <li>Juliett</li>
+                    <li>Kilo</li>
+                    <li>Lima</li>
+                    <li>Mike</li>
+                    <li>November</li>
+                    <li>Oscar</li>
+                    <li>Papa</li>
+                    <li>Quebec</li>
+                    <li>Romeo</li>
+                    <li>Sierra</li>
+                    <li>Tango</li>
+                    <li>Uniform</li>
+                    <li>Victor</li>
+                    <li>Whiskey</li>
+                    <li>X-ray</li>
+                    <li>Yankee</li>
+                    <li>Zulu</li>
+                </ul>
+                <ul>
+                    <li>Alpha</li>
+                    <li>Bravo</li>
+                    <li>Charlie</li>
+                    <li>Delta</li>
+                    <li>Echo</li>
+                    <li>Foxtrot</li>
+                    <li>Golf</li>
+                    <li>Hotel</li>
+                    <li>India</li>
+                    <li>Juliett</li>
+                    <li>Kilo</li>
+                    <li>Lima</li>
+                    <li>Mike</li>
+                </ul>
+            </div>
+
+            <div style="clear: both;"></div>
+        </div>
+
+        <footer>
+            <a href="https://github.com/ockle/scrollable-sticky-columns">github.com/ockle/scrollable-sticky-columns</a>
+        </footer>
+
+        <script type="text/javascript">
+            $(function() {
+                $('.column').scrollableStickyColumns();
+            });
+        </script>
+    </body>
+</html>
